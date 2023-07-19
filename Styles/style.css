@@ -19,10 +19,31 @@ important color palettes in this project :
 }
 /* Global Styles */
 body {
+    height:2000px;
     background-color: #000000;
     color: #2d3130;
     font-size: 1.1rem;
     line-height: 1.5;
     font-weight: 400;
     overflow-x: hidden;
+}
+/* change scroll browser */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #0c182f;
+}
+::-webkit-scrollbar-thumb {
+    background: #345084
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Global Classes */
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
 }

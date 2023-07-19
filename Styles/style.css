@@ -1,0 +1,28 @@
+/* Author: Ali Jazbi
+Start Date: 2023-07-19
+Project: Eng.Naseri's Website Portfolio
+Description: Computer Engineer and Teacher Resume Website on GitHub. The GitHub repository will be structured to include clear documentation and guidelines for future modifications and enhancements.*/
+/*
+important color palettes in this project :
+#fcfcfc
+#2d3130
+#3e4f69
+#4f6da3
+#608cdd
+*/
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* Global Styles */
+body {
+    background-color: #000000;
+    color: #2d3130;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    overflow-x: hidden;
+}

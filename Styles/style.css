@@ -15,7 +15,7 @@ important color palettes in this project :
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'vazir', sans-serif;
 }
 /* Global Styles */
 body {
@@ -27,6 +27,15 @@ body {
     font-weight: 400;
     overflow-x: hidden;
 }
+/* add new font */
+@font-face {
+    font-family: 'Vazir';
+    src: url('../font/vazir.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'homa';
+    src: url('../font/B\ Homa_0.ttf') format('truetype');
+  }
 /* change scroll browser */
 ::-webkit-scrollbar {
     width: 10px;
@@ -45,5 +54,61 @@ body {
 
 #particles-js{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+}
+
+/* navbar Lg Size*/
+.navbar {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar .container{
+    width: 75%;
+}
+.navbar .nav-link{
+    color: #fcfcfc;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    font-family: 'homa' !important;
+    cursor: pointer;
+    padding: 0 0 0 70px !important;
+}
+.navbar .nav-link:hover{
+    color: #608cdd;
+    cursor: pointer;
+}
+.navbar .btn{
+    background-image: -moz-linear-gradient(top, #5698b0, #549eab, #569bb0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#50abdf), to(#1f78aa));
+    background-image: -webkit-linear-gradient(top, #50abdf, #1f78aa);
+    background-image: -o-linear-gradient(top, #50abdf, #1f78aa);
+    background-image: linear-gradient(to bottom, #50abdf, #1f78aa);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff50abdf', endColorstr='#ff1f78aa', GradientType=0);
+    background-repeat: repeat-y;
+    background-size: 100% 90px;
+    background-position: 0 -30px;
+    -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            color: white;
+
+}
+.navbar .btn:hover{
+    background-position: 0 0;
+}
+.navbar .collapse .navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.navbar-expand-lg img{
+    width: 150px;
+    height: 50px;
 }

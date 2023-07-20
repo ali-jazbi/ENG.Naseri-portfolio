@@ -281,3 +281,67 @@ body {
     z-index: 9999999999999999999;
     background-color: red;
 }
+
+/* create style of banner for smaller than laptop */
+@media (max-width: 991.98px) {
+    .banner h1{
+        font-size: 3.5rem;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .banner .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner .social-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner .typing-demo{
+        font-size: 1.5rem;
+    }
+    .banner .social-icon a{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 10px 0 0;
+    }
+    .banner .social-icon a i{
+        font-size: 1.2rem;
+        line-height: 0 !important;
+    }
+}
+/* make text size smaller only in 762px */
+@media (max-width: 762px) {
+    .banner .container{
+        width: 95%;
+    }
+    .banner h1{
+        font-size: 2rem;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .banner .typing-demo{
+        font-size: .95rem;
+    }
+    .banner .col-lg-5{
+        margin-top: -80px;
+    }
+    .banner .social-icon a{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 10px 0 0;
+    }
+    .banner .social-icon a i{
+        font-size: .93rem;
+        line-height: 0 !important;
+    }
+}

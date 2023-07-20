@@ -66,7 +66,10 @@ body {
     left: 0;
     z-index: -1;
 }
-
+.p-gray{
+    color: #999595;
+    line-height: 2;
+}
 /* navbar Lg Size*/
 .navbar {
     background-color: #000000;
@@ -265,7 +268,7 @@ body {
     border: 1px solid #999595;
     border-radius: 50%;
     text-align: center;
-    line-height: 40px;
+    line-height: 42px;
     color: #999595;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -343,5 +346,56 @@ body {
     .banner .social-icon a i{
         font-size: .93rem;
         line-height: 0 !important;
+    }
+}
+
+/* about me */
+.about{
+    width: 100%;
+    height: 300px;
+}
+.about .col-lg-5 img {
+    width: 70%;
+    height: 80%;
+    object-fit: cover;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.071);
+}
+/* add style for up to 992 px */
+@media (min-width: 991.98px) {
+    .about .col-lg-5 img {
+        transform:perspective(800px) rotateX(0deg) rotateY(-10deg) scaleX(-1);
+    }
+}
+
+/* add style for 762 px */
+@media (max-width: 762px) {
+    .about .container{
+        width: 90%;
+    }
+    .about .col-lg-5 img {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.071);
+    }
+    .about p{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+}
+/* add style for 992 px */
+@media (min-width:762px) and (max-width: 991.98px) {
+
+    .about .col-lg-5 img {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.071);
+    }
+    .about p{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.4rem;
     }
 }

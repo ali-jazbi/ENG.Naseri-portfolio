@@ -36,6 +36,10 @@ body {
     font-family: 'homa';
     src: url('../font/B\ Homa_0.ttf') format('truetype');
     }
+@font-face {
+        font-family: 'nastaliq';
+        src: url('../font/IranNastaliq.ttf') format('truetype');
+}
 /* change scroll browser */
 ::-webkit-scrollbar {
     width: 10px;
@@ -51,16 +55,22 @@ body {
 }
 
 /* Global Classes */
-
+.container{
+    width: 75%;
+}
 #particles-js{
     width: 100%;
-    height: 100%;
+    height: 2000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 /* navbar Lg Size*/
 .navbar {
     background-color: #000000;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -112,7 +122,7 @@ body {
     width: 150px;
     height: 50px;
 }
-/* style for mobile and tablet */
+/* navbar style for mobile and tablet */
 @media (max-width: 991.98px) {
     .navbar .navbar-toggler{
         width: 35px;
@@ -205,4 +215,69 @@ body {
     .navbar .offcanvas .btn{
         margin: 30px 0 !important;
     }
+}
+
+/* header */
+.banner{
+    width: 100%;
+}
+.banner h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #fcfcfc;
+    text-align: right;
+    margin-top: 120px;
+    z-index: 100;
+}
+
+
+.typing-demo {
+    width: 31.8ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-left: 3px solid;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #999595;
+    margin: 30px 10px 0 0;
+    z-index: 100;
+    animation-delay: 3s;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}  
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.banner .social-icon a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 40px 10px 0 0;
+    background-color: transparent;
+    border: 1px solid #999595;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #999595;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.banner .social-icon a:hover {
+    border-color: #608cdd;
+    color: #608cdd;
+}
+
+.banner .container .col{
+    width: 100%;
+    z-index: 9999999999999999999;
+    background-color: red;
 }

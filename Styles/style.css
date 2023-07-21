@@ -19,7 +19,6 @@ important color palettes in this project :
 }
 /* Global Styles */
 body {
-    height:4000px;
     background-color: #000000;
     color: #2d3130;
     font-size: 1.1rem;
@@ -60,7 +59,7 @@ body {
 }
 #particles-js{
     width: 100%;
-    height:4000px;
+    height: 435vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -465,6 +464,28 @@ body {
         margin-top: 20px;
         font-size: 1.4rem;
     }
+    .about .row:nth-child(2){
+        margin-top: 150px;
+    }
+    .about .row .col-lg-4 h1{
+        font-size: 47px !important;
+        font-family: homa;
+        line-height: 1.5;
+    }
+    .about .row .col-lg-8{
+        margin-top: 30px;
+    }
+    .about .row .col-lg-8 .row .col-lg-6 h3{
+        font-size: 28px;
+        font-family: homa;
+        line-height: 1.5;
+    }
+    .about .row .col-lg-8 .row .col-lg-6 hr{
+        width: 200px;
+    }
+    .about .row .col-lg-8 .row .col-lg-6 h5{
+        font-size: 18px;
+    }
 }
 
 
@@ -536,12 +557,6 @@ footer .styled-input {
     border-radius: 4px;
 }
 
-@media only screen and (max-width: 768px){
-    footer .styled-input {
-        width:100%;
-    }
-}
-
 footer .styled-input label {
     color: #999;
     padding: 1.3rem 30px 1rem 30px;
@@ -611,14 +626,6 @@ footer .submit-btn:hover {
                 0 1px 1px 0 rgba(0,0,0,0.09);
 }
 
-@media (max-width: 768px) {
-    footer .submit-btn {
-        width:100%;
-        float: none;
-        text-align:center;
-    }
-}
-
 footer input[type=checkbox] + label {
   color: #ccc;
   font-style: italic;
@@ -627,4 +634,58 @@ footer input[type=checkbox] + label {
 footer input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
+}
+
+
+@media (min-width:762px) and (max-width: 991.98px) {
+    footer{
+        margin-top: 0px !important;
+    }
+}
+@media (max-width: 991.98px) {
+    footer{
+        margin-top: 0px !important;
+        display: flex;
+        justify-content: center;
+    }
+    footer .styled-input {
+        width:100%;
+    }
+    footer .input-container {
+        width: 100%;
+    }
+    .about .row:nth-child(2){
+        margin-top: 100px;
+    }
+    footer .container{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    footer .styled-input.wide { 
+        width: 100%;
+        max-width: 100%;
+    }
+    footer .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+    footer .row{
+        margin-top: 100px;
+    }
+    footer .row.mt-2 h4{
+        font-size: 17px;
+        line-height: 2;
+    }
+    footer .row.mt-5 h4{
+        font-size: 17px;
+    }
+    footer .col-12 h5{
+        font-size: 16px;
+        line-height: 1.7;
+    }
 }

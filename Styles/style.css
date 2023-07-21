@@ -65,6 +65,12 @@ body {
     left: 0;
     z-index: -1;
 }
+/* make particles-js height fix on mobile and tablet */
+@media (max-width: 763.98px) {
+    #particles-js{
+        height: 5400px;
+    }
+}
 .p-gray{
     color: #999595;
     line-height: 2;
@@ -687,5 +693,8 @@ footer input[type=checkbox]:checked + label {
     footer .col-12 h5{
         font-size: 16px;
         line-height: 1.7;
+    }
+    footer .col-12 h5 a{
+        display: block;
     }
 }

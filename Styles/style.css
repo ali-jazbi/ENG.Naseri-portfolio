@@ -352,6 +352,10 @@ body {
         font-size: .93rem;
         line-height: 0 !important;
     }
+    .about .row:nth-child(2),.about .row:nth-child(3),.about .row:nth-child(2) .flex-column, .about .row:nth-child(3) .flex-column{
+        align-items: center !important;
+        text-align: center;
+    }
 }
 
 /* about me */
@@ -491,6 +495,13 @@ body {
     }
     .about .row .col-lg-8 .row .col-lg-6 h5{
         font-size: 18px;
+    }
+    .about .row:nth-child(2){
+        margin-top: 200px !important;
+    }
+    .about .row:nth-child(2),.about .row:nth-child(3),.about .row:nth-child(2) .flex-column, .about .row:nth-child(3) .flex-column{
+        align-items: center !important;
+        text-align: center;
     }
 }
 

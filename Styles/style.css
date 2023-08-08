@@ -348,6 +348,13 @@ body {
         align-items: center;
         margin: 30px 10px 0 0;
     }
+    .offcanvas{
+        width: 80% !important;
+    }
+    .offcanvas img{
+        width: 50% !important;
+        height: 50% !important;
+    }
     .social-icon a i{
         font-size: .93rem;
         line-height: 0 !important;
